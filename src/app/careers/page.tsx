@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 
 const page = () => {
+  // @ts-ignore
   const plugin = React.useRef(Autoplay({ delay: 2000 }));
   return (
     <div>
