@@ -10,10 +10,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { useRef } from "react";
 
 const page = () => {
-  // @ts-ignore
-  const plugin = React.useRef(Autoplay({ delay: 2000 }));
+  const plugin = useRef(Autoplay({ delay: 2000 }));
   return (
     <div>
       <section className="grid transition-all duration-500 items-center grid-cols-1 md:grid-cols-2 justify-center px-[70px]">
@@ -195,6 +195,10 @@ const page = () => {
           </div>
         </section>
       </div>
+
+
+
+      
     </div>
   );
 };
