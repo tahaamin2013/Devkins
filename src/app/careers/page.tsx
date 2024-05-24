@@ -12,7 +12,7 @@ import {
 import Image from "next/image";
 import { useRef } from "react";
 
-const page = () => {
+const Career = () => {
   const plugin = useRef(Autoplay({ delay: 2000 }));
   return (
     <div>
@@ -203,4 +203,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Career;
