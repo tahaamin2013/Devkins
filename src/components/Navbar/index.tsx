@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -668,20 +668,25 @@ const Navbar = () => {
             >
               Portfolio
             </Link>
-            <div className={buttonVariants({
-              variant: "ghost",
-              size: "sm",
-            })}>
+            <div
+              className={buttonVariants({
+                variant: "ghost",
+                size: "sm",
+              })}
+            >
               <DropdownMenu>
-                <DropdownMenuTrigger className="flex flex-row gap-2 items-center justify-center">Our Services <ChevronDown className="mt-0.5" size='16px' /></DropdownMenuTrigger>
+                <DropdownMenuTrigger className="flex flex-row gap-2 items-center justify-center">
+                  Our Services <ChevronDown className="mt-0.5" size="16px" />
+                </DropdownMenuTrigger>
                 <DropdownMenuContent className="mt-[16px] overflow-auto grid grid-cols-3 gap-2  py-9  p-2  justify-between px-4 outline-none w-screen h-screen ">
                   <div className="flex w-full justify-between">
                     <div className="text-full text-left w-full">
-
                       {data.map((item, index): any => (
                         <div key={index} className="!text-left">
                           <DropdownMenuItem
-                            onMouseEnter={() => handleMouseEnter(item.description)}
+                            onMouseEnter={() =>
+                              handleMouseEnter(item.description)
+                            }
                             key={index}
                             className="p-2 px-3 cursor-pointer h-fit flex flex-col w-full text-left relative opacity-100"
                           >
@@ -694,12 +699,9 @@ const Navbar = () => {
                     </div>
 
                     <div className="bg-[#7c3aed] h-full rounded-full mx-2 w-[4.5px]"></div>
-
                   </div>
-                  <div className=" col-span-2"> 
-                    {showDescription && (
-                      <p>{showDescription}</p>
-                    )}
+                  <div className=" col-span-2">
+                    {showDescription && <p>{showDescription}</p>}
                   </div>
                 </DropdownMenuContent>
               </DropdownMenu>
@@ -714,12 +716,11 @@ const Navbar = () => {
               Careers
             </Link>
           </div>
-          <div className="hidden items-center space-x-4 sm:flex">
+          <div className="hidden items-center text-white space-x-4 sm:flex">
             <Link href="/talk">
               <Button
                 className={buttonVariants({
                   size: "sm",
-                  variant: "ghost",
                 })}
               >
                 Let&apos;s Talk <MessagesSquare className="w-5 h-5 ml-2" />
