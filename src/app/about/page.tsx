@@ -119,7 +119,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./idea.webp" loading="lazy" width={280} alt="" />
+                  <img src="./idea.webp" width={280} alt="" />
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img src="./re.webp" loading="lazy" width={280} alt="" />
+                <img src="./re.webp" width={280} alt="" />
               </div>
             </div>
             <div className="mt-5">
@@ -158,7 +158,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./fast.webp" loading="lazy" width={280} alt="" />
+                  <img src="./fast.webp" width={280} alt="" />
                 </div>
               </div>
             </div>
@@ -169,12 +169,7 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img
-                  src="./transparent.webp"
-                  loading="lazy"
-                  width={280}
-                  alt=""
-                />
+                <img src="./transparent.webp" width={280} alt="" />
               </div>
             </div>
             <div className="mt-5">
@@ -204,7 +199,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./man.webp" loading="lazy" width={280} alt="" />
+                  <img src="./man.webp" width={280} alt="" />
                 </div>
               </div>
             </div>
@@ -215,7 +210,7 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img src="./globsvg.svg" loading="lazy" width={280} alt="" />
+                <img src="./globsvg.svg" width={280} alt="" />
               </div>
             </div>
             <div className="mt-5">
