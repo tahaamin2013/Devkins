@@ -34,8 +34,13 @@ export default function Home() {
   return (
     <>
       <MaxWidthWrapper className="mb-12 mt-10 flex flex-col items-center justify-center text-center">
-        <motion.ul variants={container} initial="hidden" animate="visible">
-   <div>     <div
+        <motion.ul
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="relative"
+        >
+          <div
             aria-hidden="true"
             className="pointer-events-none mt-[20px] absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           >
@@ -46,9 +51,9 @@ export default function Home() {
               }}
               className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             />
-          </div></div>
+          </div>
           <div className="flex items-center flex-col">
-          <motion.li key="1" variants={item}>
+            <motion.li key="1" variants={item}>
               <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md transition-all hover:border-gray-300 hover:bg-white/50">
                 <p className="text-sm font-semibold text-gray-700">
                   Learn About Us
@@ -56,13 +61,6 @@ export default function Home() {
               </div>
             </motion.li>
             <motion.li key="2" variants={item}>
-              {/* {texts.map((text, index) => ( */}
-              {/* ))} */}
-              {/* <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
-                <span className="text-purple-600">Get a Free Mobile</span>{" "}
-                Friendly Design
-              </h1> */}
-
               <h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
                 <TextCycle />
               </h1>
@@ -89,8 +87,6 @@ export default function Home() {
 
       <div>
         <div className="relative isolate">
-      
-
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="mt-16 flow-root sm:mt-24">
               <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
@@ -105,8 +101,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-       `  `
         </div>
       </div>
 
@@ -163,10 +157,10 @@ export default function Home() {
           <div className="mt-16 flow-root sm:mt-24">
             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
               <Image
-                src="/file-upload-preview.jpg"
+                src="/fast.webp"
                 alt="uploading preview"
-                width={1419}
-                height={732}
+                width={1019}
+                height={632}
                 quality={100}
                 className="rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10"
               />
