@@ -93,9 +93,9 @@ export default function Home() {
                 <Image
                   src="/fast.webp"
                   alt="uploading preview"
-                  width={1419}
-                  height={732}
-                  className="rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10"
+                  width={7}
+                  height={7}
+                  className="rounded-md h-fit w-fit bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10"
                 />
               </div>
             </div>
@@ -158,9 +158,9 @@ export default function Home() {
               <Image
                 src="/fast.webp"
                 alt="uploading preview"
-                width={1019}
-                height={632}
-                className="rounded-md bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10"
+                width={7}
+                height={6}
+                className="rounded-md h-fit w-fit bg-white p-2 sm:p-8 md:p-20 shadow-2xl ring-1 ring-gray-900/10"
               />
             </div>
           </div>
