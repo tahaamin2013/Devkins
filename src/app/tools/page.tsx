@@ -18,7 +18,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>
               SEO (Search Engine Optimization) Tools
             </AccordionTrigger>
@@ -47,7 +47,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Simple Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
               <Link href="/fsd" className="border-b w-fit border-black">
@@ -71,7 +71,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Modern Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
               <Link href="/fsd" className="border-b w-fit border-black">
@@ -95,7 +95,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Mathametics Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
               <Link href="/fsd" className="border-b w-fit border-black">
@@ -119,7 +119,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>English Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
               <Link href="/fsd" className="border-b w-fit border-black">
@@ -143,7 +143,7 @@ const Tools = () => {
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
-          <AccordionItem value="item-1" className="w-[350px]">
+          <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Example Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
               <Link href="/fsd" className="border-b w-fit border-black">
