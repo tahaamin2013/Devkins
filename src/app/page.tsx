@@ -32,9 +32,7 @@ export default function Home() {
   const texts = ["Text 1", "Text 2", "Text 3"];
 
   return (
-    <>
-      <MaxWidthWrapper className="mb-12 mt-10 flex flex-col items-center justify-center text-center">
-        <motion.ul
+    <>        <motion.ul
           variants={container}
           initial="hidden"
           animate="visible"
@@ -83,7 +81,6 @@ export default function Home() {
             </motion.li>
           </div>
         </motion.ul>
-      </MaxWidthWrapper>
 
       <div>
         <div className="relative isolate">

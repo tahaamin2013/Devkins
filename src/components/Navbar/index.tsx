@@ -715,6 +715,15 @@ const Navbar = () => {
             >
               Careers
             </Link>
+            <Link
+              href="/tools"
+              className={buttonVariants({
+                variant: "ghost",
+                size: "sm",
+              })}
+            >
+              Tools
+            </Link>
           </div>
           <div className="hidden items-center text-white space-x-4 sm:flex">
             <Link href="/talk">
