@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 import {
@@ -9,11 +10,10 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 
-
 const AboutUs: React.FC = () => {
-    const plugin = React.useRef(
+  const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
-  )
+  );
   return (
     <section>
       <div className="flex justify-between overflow-x-hidden items-center flex-col md:flex-row  py-3 px-[50px]">
