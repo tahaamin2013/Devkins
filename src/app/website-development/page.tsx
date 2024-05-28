@@ -18,7 +18,7 @@ const WebsiteDevlopment = () => {
   );
   return (
     <div>
-      <div className="text-white text-center py-24 bg-[url( '/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg')] bg-cover bg-no-repeat bg-center">
+      <div className="text-white text-center py-24 bg-[url('/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg')] bg-cover bg-no-repeat bg-center">
         <h1 className="font-bold text-6xl md:text-7xl mb-4">Web Devlopment</h1>
         <p className="text-md">
           Encompasses building and maintaining websites, including front-end
