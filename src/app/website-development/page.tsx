@@ -58,7 +58,7 @@ const WebsiteDevlopment = () => {
             width={700}
             height={900}
           ></Image>
-          <div className="flex flex-col gap-[30px] ml-5">
+          <div className="flex flex-col gap-[30px] ml-5 mt-6 md:mt-0">
             <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
