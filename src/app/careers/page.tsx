@@ -15,8 +15,8 @@ import { useRef } from "react";
 const Career = () => {
   const plugin = useRef(Autoplay({ delay: 2000 }));
   return (
-    <div>
-      <section className="grid transition-all duration-500 items-center grid-cols-1 md:grid-cols-2 justify-center px-[70px]">
+    <div className="overflow-x-hidden">
+      <section className="grid overflow-x-hidden transition-all duration-500 items-center grid-cols-1 md:grid-cols-2 justify-center px-[70px]">
         <div>
           <h1 className="text-4xl md:text-6xl text-[#1a0e2e] font-bold">
             Achieve Your Professional Goals with Devkins
