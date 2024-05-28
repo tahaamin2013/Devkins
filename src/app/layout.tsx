@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "min-h-screen font-sans antialiased grainy"
+          "font-sans antialiased grainy"
         )}
       >
         <Navbar />

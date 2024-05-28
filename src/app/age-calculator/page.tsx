@@ -1,97 +1,67 @@
-'use client'
+"use client";
 
-import { useState } from 'react';
-import { differenceInYears, differenceInMonths, differenceInDays, addYears, addMonths, addDays } from 'date-fns';
+import React, { useState } from "react";
 
 const AgeCalculator = () => {
-  const [birthdate, setBirthdate] = useState('');
-  const [ageDetails, setAgeDetails] = useState<{
+  const [birthdate, setBirthdate] = useState("");
+  const [age, setAge] = useState<{
     years: number;
     months: number;
     days: number;
-    totalMonths: number;
-    totalWeeks: number;
-    remainingDaysAfterWeeks: number;
-    totalDays: number;
-    totalHours: number;
-    totalMinutes: number;
-    totalSeconds: number;
   } | null>(null);
 
-  const calculateAgeDetails = (birthdate: string) => {
+  const calculateAge = (birthdate: string) => {
     const birthDate = new Date(birthdate);
     const today = new Date();
 
-    let years = differenceInYears(today, birthDate);
-    let months = differenceInMonths(today, addYears(birthDate, years));
-    let days = differenceInDays(today, addMonths(addYears(birthDate, years), months));
+    const diffInMilliseconds = Math.abs(today.getTime() - birthDate.getTime());
+    const years = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24 * 365.25));
+    const months = Math.floor((diffInMilliseconds % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24 * 30.44));
+    const days = Math.floor((diffInMilliseconds % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
 
-    // Adjust if days < 0
-    if (days < 0) {
-      months -= 1;
-      days = differenceInDays(today, addMonths(addYears(birthDate, years), months));
-    }
-
-    // Adjust if months < 0
-    if (months < 0) {
-      years -= 1;
-      months += 12;
-    }
-
-    const totalMonths = years * 12 + months;
-    const totalDays = differenceInDays(today, birthDate);
-    const totalWeeks = Math.floor(totalDays / 7);
-    const remainingDaysAfterWeeks = totalDays % 7;
-    const totalHours = totalDays * 24;
-    const totalMinutes = totalHours * 60;
-    const totalSeconds = totalMinutes * 60;
-
-    setAgeDetails({
-      years,
-      months,
-      days,
-      totalMonths,
-      totalWeeks,
-      remainingDaysAfterWeeks,
-      totalDays,
-      totalHours,
-      totalMinutes,
-      totalSeconds,
-    });
+    setAge({ years, months, days });
   };
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
-    calculateAgeDetails(birthdate);
+    calculateAge(birthdate);
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <h1 className="text-4xl font-bold mb-4">Age Calculator</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center">
-        <input
-          type="date"
-          value={birthdate}
-          onChange={(e) => setBirthdate(e.target.value)}
-          className="border border-gray-300 p-2 rounded mb-4"
-        />
-        <button type="submit" className="bg-blue-500 text-white p-2 rounded">
-          Calculate Age
-        </button>
-      </form>
-      {ageDetails && (
-        <div className="mt-4 text-2xl">
-          <p>{ageDetails.years} years {ageDetails.months} months {ageDetails.days} days</p>
-          <p>or {ageDetails.totalMonths} months {ageDetails.days} days</p>
-          <p>or {ageDetails.totalWeeks} weeks {ageDetails.remainingDaysAfterWeeks} days</p>
-          <p>or {ageDetails.totalDays} days</p>
-          <p>or {ageDetails.totalHours.toLocaleString()} hours</p>
-          <p>or {ageDetails.totalMinutes.toLocaleString()} minutes</p>
-          <p>or {ageDetails.totalSeconds.toLocaleString()} seconds</p>
+      <form onSubmit={handleSubmit} className="flex bg-white mx-4 rounded-xl border-2 px-5 py-4 flex-col items-center">
+        <div>
+          <input
+            type="date"
+            value={birthdate}
+            onChange={(e) => setBirthdate(e.target.value)}
+            className="border border-gray-300 w-[200px] p-2 rounded mb-4"
+          />
+          <button
+            type="submit"
+            className="bg-primary py-2.5 px-5 font-bold text-white p-2 rounded"
+          >
+            Calculate Age
+          </button>
         </div>
-      )}
+        {age && (
+          <div>
+            <p className="mt-4 text-2xl">
+              You are {age.years} years, {age.months} months, and {age.days} days old.
+            </p>
+            <p className="mt-4 text-2xl">
+              Or approximately {Math.round((age.years * 12 + age.months + age.days / 30) * 100) / 100} months old.
+            </p>
+            <p className="mt-4 text-2xl">
+              Or {Math.floor((age.years * 12 + age.months) / 12)} years, {Math.floor((age.years * 12 + age.months) % 12)} months, and {age.days} days old.
+            </p>
+          </div>
+        )}
+      </form>
     </div>
   );
 };
 
 export default AgeCalculator;
+

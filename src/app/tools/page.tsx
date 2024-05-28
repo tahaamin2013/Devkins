@@ -176,17 +176,35 @@ const Tools = () => {
               <AccordionItem value="item-1" className="w-[330px]">
                 <AccordionTrigger>Other Calculators</AccordionTrigger>
                 <AccordionContent className="flex flex-col gap-3">
-                  <Link href="/age-calculator" className="border-b w-fit border-black">
+                  <Link
+                    href="/age-calculator"
+                    className="border-b w-fit border-black"
+                  >
                     Age Calculator
                   </Link>
-                  <Link href="/fsd" className="border-b w-fit border-black">
-                    Tool Title
+                  <Link
+                    href="/random-number-calculator"
+                    className="border-b w-fit border-black"
+                  >
+                    Random Number Generator
                   </Link>
-                  <Link href="/fsd" className="border-b w-fit border-black">
-                    Tool Title
+                  <Link
+                    href="/ramdom-password-gnenerator"
+                    className="border-b w-fit border-black"
+                  >
+                    Random Password Generator
                   </Link>
-                  <Link href="/fsd" className="border-b w-fit border-black">
-                    Tool Title
+                  <Link
+                    href="/Simple-Calculator"
+                    className="border-b w-fit border-black"
+                  >
+                    Simple Calculator
+                  </Link>
+                  <Link
+                    href="/FactorCalculator"
+                    className="border-b w-fit border-black"
+                  >
+                    Factor Calculator
                   </Link>
                 </AccordionContent>
               </AccordionItem>
