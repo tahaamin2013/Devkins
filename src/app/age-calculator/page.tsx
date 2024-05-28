@@ -1,99 +1,93 @@
-"use client";
-// Import necessary modules
-import React, { useState } from "react";
+'use client'
 
-// Define the AgeDetails type
-type AgeDetails = {
-  years: number;
-  months: number;
-  days: number;
-  totalMonths: number;
-  totalDays: number;
-  totalWeeks: number;
-  totalHours: number;
-  totalMinutes: number;
-  totalSeconds: number;
-} | null;
+import { useState } from 'react';
+import { differenceInYears, differenceInMonths, differenceInDays, addYears, addMonths, addDays } from 'date-fns';
 
-// Define the AgeCalculator component
-const AgeCalculator: React.FC = () => {
-  // Define state variables
-  const [birthdate, setBirthdate] = useState<string>("");
-  const [ageDetails, setAgeDetails] = useState<AgeDetails>(null);
+const AgeCalculator = () => {
+  const [birthdate, setBirthdate] = useState('');
+  const [ageDetails, setAgeDetails] = useState<{
+    years: number;
+    months: number;
+    days: number;
+    totalMonths: number;
+    totalWeeks: number;
+    remainingDaysAfterWeeks: number;
+    totalDays: number;
+    totalHours: number;
+    totalMinutes: number;
+    totalSeconds: number;
+  } | null>(null);
 
-  // Function to calculate age
-  const calculateAge = (birthdate: string): AgeDetails => {
+  const calculateAgeDetails = (birthdate: string) => {
     const birthDate = new Date(birthdate);
     const today = new Date();
-    const diff = today.getTime() - birthDate.getTime();
 
-    // Calculate age in various formats
-    const years = Math.round(diff / (1000 * 60 * 60 * 24 * 365));
-    const months = Math.round((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30.44));
-    const days = Math.round((diff % (1000 * 60 * 60 * 24 * 30.44)) / (1000 * 60 * 60 * 24));
+    let years = differenceInYears(today, birthDate);
+    let months = differenceInMonths(today, addYears(birthDate, years));
+    let days = differenceInDays(today, addMonths(addYears(birthDate, years), months));
+
+    // Adjust if days < 0
+    if (days < 0) {
+      months -= 1;
+      days = differenceInDays(today, addMonths(addYears(birthDate, years), months));
+    }
+
+    // Adjust if months < 0
+    if (months < 0) {
+      years -= 1;
+      months += 12;
+    }
+
     const totalMonths = years * 12 + months;
-    const totalDays = Math.round(diff / (1000 * 60 * 60 * 24));
-    const totalWeeks = Math.round(totalDays / 7);
-    const totalHours = Math.round(diff / (1000 * 60 * 60));
-    const totalMinutes = Math.round(diff / (1000 * 60));
-    const totalSeconds = Math.round(diff / 1000);
+    const totalDays = differenceInDays(today, birthDate);
+    const totalWeeks = Math.floor(totalDays / 7);
+    const remainingDaysAfterWeeks = totalDays % 7;
+    const totalHours = totalDays * 24;
+    const totalMinutes = totalHours * 60;
+    const totalSeconds = totalMinutes * 60;
 
-    return { years, months, days, totalMonths, totalDays, totalWeeks, totalHours, totalMinutes, totalSeconds };
+    setAgeDetails({
+      years,
+      months,
+      days,
+      totalMonths,
+      totalWeeks,
+      remainingDaysAfterWeeks,
+      totalDays,
+      totalHours,
+      totalMinutes,
+      totalSeconds,
+    });
   };
 
-  // Function to handle form submission
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setAgeDetails(calculateAge(birthdate));
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    calculateAgeDetails(birthdate);
   };
 
-  // JSX for the AgeCalculator component
   return (
-    <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <label className="block">
-          <span className="text-gray-700">Enter your birthdate:</span>
-          <input
-            type="date"
-            value={birthdate}
-            onChange={(e) => setBirthdate(e.target.value)}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
-            required
-          />
-        </label>
-        <button
-          type="submit"
-          className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md"
-        >
+    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <h1 className="text-4xl font-bold mb-4">Age Calculator</h1>
+      <form onSubmit={handleSubmit} className="flex flex-col items-center">
+        <input
+          type="date"
+          value={birthdate}
+          onChange={(e) => setBirthdate(e.target.value)}
+          className="border border-gray-300 p-2 rounded mb-4"
+        />
+        <button type="submit" className="bg-blue-500 text-white p-2 rounded">
           Calculate Age
         </button>
       </form>
       {ageDetails && (
-        <div className="mt-6">
-          <h2 className="text-lg font-semibold">Your age is:</h2>
-          <div className="mt-2">
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.years} years {ageDetails.months} months {ageDetails.days} days</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalMonths} months {ageDetails.days} days</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalWeeks} weeks {ageDetails.days} days</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalDays} days</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalHours} hours</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalMinutes} minutes</p>
-            </div>
-            <div className="flex justify-between mb-4">
-              <p>{ageDetails.totalSeconds} seconds</p>
-            </div>
-          </div>
+        <div className="mt-4 text-2xl">
+          <p>{ageDetails.years} years {ageDetails.months} months {ageDetails.days} days</p>
+          <p>or {ageDetails.totalMonths} months {ageDetails.days} days</p>
+          <p>or {ageDetails.totalWeeks} weeks {ageDetails.remainingDaysAfterWeeks} days</p>
+          <p>or {ageDetails.totalDays} days</p>
+          <p>or {ageDetails.totalHours.toLocaleString()} hours</p>
+          <p>or {ageDetails.totalMinutes.toLocaleString()} minutes</p>
+          <p>or {ageDetails.totalSeconds.toLocaleString()} seconds</p>
         </div>
       )}
     </div>
