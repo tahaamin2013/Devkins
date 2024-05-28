@@ -707,12 +707,12 @@ const Navbar = () => {
                             key={index}
                             className="p-2 px-3 cursor-pointer h-fit flex flex-col w-full text-left relative opacity-100"
                           >
-                            <a
+                            <Link
                               href={item.link}
                               className="w-full text-left"
                             >
-                              <a  href={item.link}>{item.title}</a>
-                            </a>
+                              <Link  href={item.link}>{item.title}</Link>
+                            </Link>
                           </DropdownMenuItem>
                         </div>
                       ))}
