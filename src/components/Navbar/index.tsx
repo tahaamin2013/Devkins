@@ -13,10 +13,27 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
   const isAuthenticated = false;
-  const [showDescription, setShowDescription] = useState(null);
+  const [showDescription, setShowDescription] = useState<string | null>(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const router = useRouter();
+
+  const handleLinkClick = (href: string) => {
+    setIsDropdownOpen(false);
+    router.push(href);
+  };
+  document.addEventListener('DOMContentLoaded', () => {
+    const refreshLink = document.getElementById('refreshLink');
+    if (refreshLink) {
+        refreshLink.addEventListener('click', () => {
+            location.reload();
+        });
+    }
+});
+
 
   const handleMouseEnter = (description: any) => {
     setShowDescription(description);
@@ -171,7 +188,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/website-development",
       title: "Website Development",
       description: () => (
         <div className="flex flex-col">
@@ -690,9 +707,12 @@ const Navbar = () => {
                             key={index}
                             className="p-2 px-3 cursor-pointer h-fit flex flex-col w-full text-left relative opacity-100"
                           >
-                            <Link href={item.link} className="w-full text-left">
-                              <Link href={item.link}>{item.title}</Link>
-                            </Link>
+                            <a
+                              href={item.link}
+                              className="w-full text-left"
+                            >
+                              <a  href={item.link}>{item.title}</a>
+                            </a>
                           </DropdownMenuItem>
                         </div>
                       ))}

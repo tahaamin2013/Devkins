@@ -7,7 +7,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+
+
 const AboutUs: React.FC = () => {
+    const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  )
   return (
     <section>
       <div className="flex justify-between overflow-x-hidden items-center flex-col md:flex-row  py-3 px-[50px]">
@@ -48,8 +54,7 @@ const AboutUs: React.FC = () => {
           About Us
         </button>
         <h1 className="text-4xl font-bold text-[#1a0f2e]">
-          Devkins helps start-ups, SMEs <br /> and enterprises grow their{" "}
-          <br />
+          Devkins helps start-ups, SMEs <br /> and enterprises grow their <br />
           business
         </h1>
         <div className="flex flex-col md:flex-row justify-between">
@@ -87,8 +92,8 @@ const AboutUs: React.FC = () => {
             </p>
             <h1 className="text-7xl font-bold text-[#1f1038]">Our Vision</h1>
             <p className="text-zinc-700">
-              &quot;While Devkins has been growing in a tech landscape for
-              more than a decade, I recognize the challenges businesses face in
+              &quot;While Devkins has been growing in a tech landscape for more
+              than a decade, I recognize the challenges businesses face in
               managing digital systems. As the world transforms into a global
               village, our vision goes beyond. We aim to reimagine IT solutions
               into smart, agile, and AI-enhanced digital assets.&quot;
@@ -137,8 +142,8 @@ const AboutUs: React.FC = () => {
               <h1 className="font-bold text-5xl mb-4">Adaptability</h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
                 Our determination fuels relentless pursuit, turning challenges
-                into triumphs. It propels tech experts at Devkins to
-                overcome obstacles and achieve success against all odds.
+                into triumphs. It propels tech experts at Devkins to overcome
+                obstacles and achieve success against all odds.
               </p>
             </div>
             <div></div>
@@ -150,8 +155,8 @@ const AboutUs: React.FC = () => {
               <h1 className="font-bold text-5xl mb-4">Tenacity</h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
                 Our determination fuels relentless pursuit, turning challenges
-                into triumphs. It propels tech experts at Devkins to
-                overcome obstacles and achieve success against all odds.
+                into triumphs. It propels tech experts at Devkins to overcome
+                obstacles and achieve success against all odds.
               </p>
             </div>
             <div>
@@ -177,9 +182,9 @@ const AboutUs: React.FC = () => {
                 Transparency
               </h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
-                Fostering a culture of transparency is Devkins&apos;s forte
-                for its resilient clients. It has helped maintain a productive
-                and qualitative relationship between the two.
+                Fostering a culture of transparency is Devkins&apos;s forte for
+                its resilient clients. It has helped maintain a productive and
+                qualitative relationship between the two.
               </p>
             </div>
             <div></div>
@@ -281,7 +286,12 @@ const AboutUs: React.FC = () => {
           Over the last 14 years, we&lsquo;ve been driven by our passion for
           helping clients achieve their goals.
         </p>
-        <Carousel className="w-full max-w-5xl text-black mt-3">
+        <Carousel
+          className="w-full max-w-5xl text-black mt-3"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          plugins={[plugin.current]}
+        >
           <CarouselContent className="-ml-1 ">
             <CarouselItem className="pl-1 md:basis-1/2 grid lg:basis-1/3">
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
