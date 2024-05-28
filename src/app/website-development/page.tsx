@@ -18,7 +18,7 @@ const WebsiteDevlopment = () => {
   );
   return (
     <div>
-      <div className="text-white text-center py-24 bg-[url(&lsquo;/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg&lsquo;)] bg-cover bg-no-repeat bg-center">
+      <div className="text-white text-center py-24 bg-[url( &lsquo;/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg&lsquo;)] bg-cover bg-no-repeat bg-center">
         <h1 className="font-bold text-6xl md:text-7xl mb-4">Web Devlopment</h1>
         <p className="text-md">
           Encompasses building and maintaining websites, including front-end
@@ -201,8 +201,8 @@ const WebsiteDevlopment = () => {
                   Analysis and Planning
                 </h1>
                 <p className="text-sm">
-                  The process begins by thoroughly understanding the
-                  client&lsquo;s objectives.
+                  The process begins by thoroughly understanding the client
+                  &lsquo;s objectives.
                 </p>
               </div>
               <div className="flex flex-col ml-[30px] md:ml-0 mt-[30px] w-[300px] px-9 h-[290px]  justify-center items-center rounded-full border border-white">
@@ -213,8 +213,8 @@ const WebsiteDevlopment = () => {
                   Current State Evaluation
                 </h1>
                 <p className="text-sm">
-                  Assess the client&lsquo;s existing IT infrastructure, systems,
-                  and processes
+                  Assess the client &lsquo;s existing IT infrastructure,
+                  systems, and processes
                 </p>
               </div>
             </div>
@@ -431,7 +431,7 @@ const WebsiteDevlopment = () => {
                 </div>
               </CarouselItem>{" "}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:block ml-3 pl-1" />
+            <CarouselPrevious className="hidden md:block ml-4 pl-1" />
             <CarouselNext className="hidden md:block mr-5 pl-1" />
           </Carousel>
         </div>
