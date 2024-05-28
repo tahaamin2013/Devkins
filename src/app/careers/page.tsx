@@ -47,87 +47,87 @@ const Career = () => {
           <CarouselContent className="-ml-1 h-fit">
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/6606d86ab918a52a500e2d84_Redrover Logo.webp "
                 alt=""
               />
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/6606d86ae6d44cc29ad852a0_Kallidus Logo.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/6606d869e6d44cc29ad8518c_Engage Logo.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/6606d8695d5233bc7852a42b_Dealty Logo.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/6606d869144e68deb59e9aca_Al Ghurair Logo.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/letsremotify.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/predictview.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/RMIInsights.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
               <Image
-                width={500}
+                width={100000}
                 height={10}
-                className="w-[500px]"
+                className="w-[200px] md:w-[500px]"
                 src="/Terrascope.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
-              <Image width={500} height={10} src="/Zoopa.webp" alt=""></Image>
+              <Image width={100000} height={10} src="/Zoopa.webp" alt=""></Image>
             </CarouselItem>
           </CarouselContent>
         </Carousel>
