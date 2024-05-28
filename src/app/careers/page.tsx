@@ -22,9 +22,9 @@ const Career = () => {
             Achieve Your Professional Goals with Devkins
           </h1>
           <p className="mt-4 text-zinc-400 text-md md:text-lg  font-semibold	">
-            Value-based upscaling is at the heart of Devkins’s work
-            environment. From learning to implementation, our developers and
-            tech experts stay ahead in their professional game.
+            Value-based upscaling is at the heart of Devkins’s work environment.
+            From learning to implementation, our developers and tech experts
+            stay ahead in their professional game.
           </p>
           <div className="flex-col md:flex-row flex gap-7 mt-6">
             <button className="bg-primary hover:bg-transparent hover:text-black hover:border hover:border-primary transition-all duration-500 text-white font-bold px-5 py-4 rounded-full">
@@ -49,7 +49,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/6606d86ab918a52a500e2d84_Redrover Logo.webp "
                 alt=""
               />
@@ -58,7 +58,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/6606d86ae6d44cc29ad852a0_Kallidus Logo.webp"
                 alt=""
               ></Image>
@@ -67,7 +67,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/6606d869e6d44cc29ad8518c_Engage Logo.webp"
                 alt=""
               ></Image>
@@ -76,7 +76,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/6606d8695d5233bc7852a42b_Dealty Logo.webp"
                 alt=""
               ></Image>
@@ -85,7 +85,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/6606d869144e68deb59e9aca_Al Ghurair Logo.webp"
                 alt=""
               ></Image>
@@ -94,7 +94,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/letsremotify.webp"
                 alt=""
               ></Image>
@@ -103,7 +103,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/predictview.webp"
                 alt=""
               ></Image>
@@ -112,7 +112,7 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/RMIInsights.webp"
                 alt=""
               ></Image>
@@ -121,13 +121,18 @@ const Career = () => {
               <Image
                 width={100000}
                 height={10}
-                className="w-[200px] md:w-[500px]"
+                className="w-[500px]"
                 src="/Terrascope.webp"
                 alt=""
               ></Image>
             </CarouselItem>
             <CarouselItem className="pl-1 md:basis-1/2 lg:basis-1/5 h-fit">
-              <Image width={100000} height={10} src="/Zoopa.webp" alt=""></Image>
+              <Image
+                width={100000}
+                height={10}
+                src="/Zoopa.webp"
+                alt=""
+              ></Image>
             </CarouselItem>
           </CarouselContent>
         </Carousel>
