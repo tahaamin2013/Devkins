@@ -12,7 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const Navbar = () => {
@@ -25,15 +25,23 @@ const Navbar = () => {
     setIsDropdownOpen(false);
     router.push(href);
   };
-  document.addEventListener('DOMContentLoaded', () => {
-    const refreshLink = document.getElementById('refreshLink');
-    if (refreshLink) {
-        refreshLink.addEventListener('click', () => {
-            location.reload();
-        });
-    }
-});
 
+  useEffect(() => {
+    const refreshLink = document.getElementById("refreshLink");
+    const handleRefreshClick = () => {
+      location.reload();
+    };
+
+    if (refreshLink) {
+      refreshLink.addEventListener("click", handleRefreshClick);
+    }
+
+    return () => {
+      if (refreshLink) {
+        refreshLink.removeEventListener("click", handleRefreshClick);
+      }
+    };
+  }, []);
 
   const handleMouseEnter = (description: any) => {
     setShowDescription(description);
@@ -42,7 +50,7 @@ const Navbar = () => {
   const handleMouseLeave = () => {
     setShowDescription(null);
   };
-
+  
   const data = [
     {
       link: "/fsfsdsdf",
@@ -707,11 +715,8 @@ const Navbar = () => {
                             key={index}
                             className="p-2 px-3 cursor-pointer h-fit flex flex-col w-full text-left relative opacity-100"
                           >
-                            <Link
-                              href={item.link}
-                              className="w-full text-left"
-                            >
-                              <Link  href={item.link}>{item.title}</Link>
+                            <Link href={item.link} className="w-full text-left">
+                              <Link href={item.link}>{item.title}</Link>
                             </Link>
                           </DropdownMenuItem>
                         </div>

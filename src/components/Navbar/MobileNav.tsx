@@ -10,15 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useEffect, useState } from "react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+import { useState } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -35,11 +27,6 @@ const MobileNav = () => {
   const toggleOpen = () => setOpen((prev) => !prev);
 
   const pathname = usePathname();
-
-  useEffect(() => {
-    if (isOpen) closeSidebar();
-  }, [pathname]);
-
   const closeOnCurrent = (href: string) => {
     if (pathname === href) {
       closeSidebar();

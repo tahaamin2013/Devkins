@@ -9,11 +9,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Image from "next/image";
 
 const AboutUs: React.FC = () => {
-  const plugin = useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <section>
       <div className="flex justify-between overflow-x-hidden items-center flex-col md:flex-row  py-3 px-[50px]">
@@ -25,10 +24,11 @@ const AboutUs: React.FC = () => {
         </h1>
 
         <div>
-          <img
-            src="./taha.JPG"
+          <Image
+            width={500}
+            height={500}
+            src="/taha.JPG"
             alt="Taha A human image"
-            width="280px"
             className="rounded-xl"
           />
         </div>
@@ -69,7 +69,13 @@ const AboutUs: React.FC = () => {
           </button>
         </div>
         <div className="flex flex-col items-center xl:flex-row gap-14">
-          <img src="./b.jpg" className="rounded-xl mt-[50px]" alt="" />
+          <Image
+            width={700}
+            height={500}
+            src="/b.jpg"
+            className="rounded-xl mt-[50px]"
+            alt=""
+          />
           <div className="flex flex-col gap-[30px]">
             <div>
               <h1 className="font-bold text-5xl text-primary">3,000+</h1>
@@ -84,7 +90,7 @@ const AboutUs: React.FC = () => {
         </div>
         <div className="grid grid-cols-1 mt-6 items-center md:grid-cols-2 justify-between">
           <div>
-            <img src="./taha2.png" width="330px" alt="" />
+            <Image width={280} height={500} src="/taha2.png" alt="" />
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-primary">
@@ -124,7 +130,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./idea.webp" width={280} alt="" />
+                  <Image width={280} height={500} src="/idea.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -135,7 +141,7 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img src="./re.webp" width={280} alt="" />
+                <Image width={280} height={500} src="/re.webp" alt="" />
               </div>
             </div>
             <div className="mt-5">
@@ -163,7 +169,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./fast.webp" width={280} alt="" />
+                  <Image width={280} height={500} src="/fast.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -174,7 +180,12 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img src="./transparent.webp" width={280} alt="" />
+                <Image
+                  width={280}
+                  height={500}
+                  src="/transparent.webp"
+                  alt=""
+                />
               </div>
             </div>
             <div className="mt-5">
@@ -204,7 +215,7 @@ const AboutUs: React.FC = () => {
               <div className="flex justify-center items-center">
                 <div className="values-image object-contain">
                   <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                  <img src="./man.webp" width={280} alt="" />
+                  <Image width={280} height={500} src="/man.webp" alt="" />
                 </div>
               </div>
             </div>
@@ -215,7 +226,7 @@ const AboutUs: React.FC = () => {
             <div className="flex justify-center items-center">
               <div className="values-image object-contain">
                 <div className="bg-[#00d5b9] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
-                <img src="./globsvg.svg" width={280} alt="" />
+                <Image width={280} height={500} src="/globsvg.svg" alt="" />
               </div>
             </div>
             <div className="mt-5">
@@ -241,35 +252,65 @@ const AboutUs: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center lg:grid-cols-3 xl:grid-cols-4">
             <div className="flex flex-col gap-3">
-              <img src="./IMG_3364.JPG" className="rounded-t-xl" alt="" />
+              <Image
+                width={280}
+                height={500}
+                src="/IMG_3364.JPG"
+                className="rounded-t-xl"
+                alt=""
+              />
               <div>
                 <h1 className="text-2xl">Taha Amin</h1>
                 <p className="text-zinc-500">Chief Finance Officer</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="./IMG_3364.JPG" className="rounded-t-xl" alt="" />
+              <Image
+                width={280}
+                height={500}
+                src="/IMG_3364.JPG"
+                className="rounded-t-xl"
+                alt=""
+              />
               <div>
                 <h1 className="text-2xl">Taha Amin</h1>
                 <p className="text-zinc-500">Chief of Staff</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="./IMG_3364.JPG" className="rounded-t-xl" alt="" />
+              <Image
+                width={280}
+                height={500}
+                src="/IMG_3364.JPG"
+                className="rounded-t-xl"
+                alt=""
+              />
               <div>
                 <h1 className="text-2xl">Taha Amin</h1>
                 <p className="text-zinc-500">Chief Delivery Officer</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="./IMG_3364.JPG" className="rounded-t-xl" alt="" />
+              <Image
+                width={280}
+                height={500}
+                src="/IMG_3364.JPG"
+                className="rounded-t-xl"
+                alt=""
+              />
               <div>
                 <h1 className="text-2xl">Taha Amin</h1>
                 <p className="text-zinc-500">Chief Business Officer</p>
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <img src="./IMG_3364.JPG" className="rounded-t-xl" alt="" />
+              <Image
+                width={280}
+                height={500}
+                src="/IMG_3364.JPG"
+                className="rounded-t-xl"
+                alt=""
+              />
               <div>
                 <h1 className="text-2xl">Taha Amin</h1>
                 <p className="text-zinc-500">Head of New Markets </p>
