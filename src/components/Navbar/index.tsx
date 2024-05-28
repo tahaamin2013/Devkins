@@ -637,7 +637,7 @@ const Navbar = () => {
       <MaxWidthWrapper>
         <div className="flex h-16 items-center justify-between border-b border-zinc-200">
           <Link href="/" className="flex text-2xl z-40 font-bold">
-            WebKin Solutions
+            Devkins
           </Link>
           <MobileNav />
           <div className="hidden items-center space-x-4 sm:flex">

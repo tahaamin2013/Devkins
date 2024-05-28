@@ -89,78 +89,110 @@ const Tools = () => {
             </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
-        >
-          <AccordionItem value="item-1" className="w-[330px]">
-            <AccordionTrigger>Mathametics Tools</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-3">
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
-        >
-          <AccordionItem value="item-1" className="w-[330px]">
-            <AccordionTrigger>English Tools</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-3">
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        <Accordion
-          type="single"
-          collapsible
-          defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
-        >
-          <AccordionItem value="item-1" className="w-[330px]">
-            <AccordionTrigger>Example Tools</AccordionTrigger>
-            <AccordionContent className="flex flex-col gap-3">
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
-              </Link>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+
+        <div className="px-6">
+          <h1 className="font-bold text-3xl">Calculators</h1>
+          <div className="flex flex-wrap justify-left mt-6 gap-y-[30px] gap-[50px] w-full">
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
+              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+            >
+              <AccordionItem value="item-1" className="w-[330px]">
+                <AccordionTrigger>Financial Calculators</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-3">
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
+              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+            >
+              <AccordionItem value="item-1" className="w-[330px]">
+                <AccordionTrigger>
+                  Fitness and Health Calculators
+                </AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-3">
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
+              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+            >
+              <AccordionItem value="item-1" className="w-[330px]">
+                <AccordionTrigger>Math Calculators</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-3">
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+            <Accordion
+              type="single"
+              collapsible
+              defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
+              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+            >
+              <AccordionItem value="item-1" className="w-[330px]">
+                <AccordionTrigger>Other Calculators</AccordionTrigger>
+                <AccordionContent className="flex flex-col gap-3">
+                  <Link href="/age-calculator" className="border-b w-fit border-black">
+                    Age Calculator
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                  <Link href="/fsd" className="border-b w-fit border-black">
+                    Tool Title
+                  </Link>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
+        </div>
       </div>
     </div>
   );

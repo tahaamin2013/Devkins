@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
           About Us
         </button>
         <h1 className="text-4xl font-bold text-[#1a0f2e]">
-          Webkin Guru helps start-ups, SMEs <br /> and enterprises grow their{" "}
+          Devkins helps start-ups, SMEs <br /> and enterprises grow their{" "}
           <br />
           business
         </h1>
@@ -83,11 +83,11 @@ const AboutUs: React.FC = () => {
           </div>
           <div className="flex flex-col gap-4">
             <p className="text-primary">
-              When you choose Webkin Guru, you&apos;re choosing
+              When you choose Devkins, you&apos;re choosing
             </p>
             <h1 className="text-7xl font-bold text-[#1f1038]">Our Vision</h1>
             <p className="text-zinc-700">
-              &quot;While Webkin Guru has been growing in a tech landscape for
+              &quot;While Devkins has been growing in a tech landscape for
               more than a decade, I recognize the challenges businesses face in
               managing digital systems. As the world transforms into a global
               village, our vision goes beyond. We aim to reimagine IT solutions
@@ -137,7 +137,7 @@ const AboutUs: React.FC = () => {
               <h1 className="font-bold text-5xl mb-4">Adaptability</h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
                 Our determination fuels relentless pursuit, turning challenges
-                into triumphs. It propels tech experts at Webkin Guru to
+                into triumphs. It propels tech experts at Devkins to
                 overcome obstacles and achieve success against all odds.
               </p>
             </div>
@@ -150,7 +150,7 @@ const AboutUs: React.FC = () => {
               <h1 className="font-bold text-5xl mb-4">Tenacity</h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
                 Our determination fuels relentless pursuit, turning challenges
-                into triumphs. It propels tech experts at Webkin Guru to
+                into triumphs. It propels tech experts at Devkins to
                 overcome obstacles and achieve success against all odds.
               </p>
             </div>
@@ -177,7 +177,7 @@ const AboutUs: React.FC = () => {
                 Transparency
               </h1>
               <p className="text-md mt-2 text-zinc-600 font-sans">
-                Fostering a culture of transparency is Webkin Guru&apos;s forte
+                Fostering a culture of transparency is Devkins&apos;s forte
                 for its resilient clients. It has helped maintain a productive
                 and qualitative relationship between the two.
               </p>
@@ -231,8 +231,7 @@ const AboutUs: React.FC = () => {
             </h1>
             <p className="text-zinc-500">
               Meet the driving force, the dreamers, the minds behind crafting a
-              cutting-edge <br /> software development company, aka, Webkin
-              Guru.
+              cutting-edge <br /> software development company, aka, Devkins.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-center items-center lg:grid-cols-3 xl:grid-cols-4">
@@ -288,7 +287,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -301,7 +300,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -314,7 +313,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -327,7 +326,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -340,7 +339,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -353,7 +352,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -366,7 +365,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -379,7 +378,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -392,7 +391,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -405,7 +404,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -418,7 +417,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -431,7 +430,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
@@ -444,7 +443,7 @@ const AboutUs: React.FC = () => {
               <div className="p-1 flex flex-col gap-4 text-white border border-white rounded-xl px-6 py-3 mr-[20px]">
                 <p>⭐⭐⭐⭐⭐</p>
                 <p>
-                  Thanks to Webkin Guru&lsquo;s efforts, our app looks great and
+                  Thanks to Devkins&lsquo;s efforts, our app looks great and
                   delivers on customer needs. They&lsquo;re responsive and the
                   client finds it easy to work with them. Their exceptional work
                   encourages ongoing partnership, making them highly
