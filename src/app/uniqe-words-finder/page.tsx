@@ -45,13 +45,12 @@ export default function KeywordMatcher() {
       .writeText(nonMatchedKeywords.join("\n"))
       .then(() => {
         setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000); // Revert to copy icon after 2 seconds
+        setTimeout(() => setIsCopied(false), 2000);
       })
       .catch((err) => {
         console.error("Failed to copy:", err);
       });
   };
-
   return (
     <div className="flex h-screen px-5   justify-center items-center">
       <div className="bg-white border shadow-2xl rounded-lg p-8 w-full max-w-3xl">

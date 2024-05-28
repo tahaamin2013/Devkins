@@ -18,7 +18,7 @@ const WebsiteDevlopment = () => {
   );
   return (
     <div>
-      <div className="text-white text-center py-24 bg-[url('/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg')] bg-cover bg-no-repeat bg-center">
+      <div className="text-white text-center py-24 bg-[url(&lsquo;/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg&lsquo;)] bg-cover bg-no-repeat bg-center">
         <h1 className="font-bold text-6xl md:text-7xl mb-4">Web Devlopment</h1>
         <p className="text-md">
           Encompasses building and maintaining websites, including front-end
@@ -104,8 +104,8 @@ const WebsiteDevlopment = () => {
               <span className="font-bold">
                 Tailored to Specific Needs:
               </span>{" "}
-              Custom software is designed to address your organization's unique
-              requirements and challenges, ensuring a <br />
+              Custom software is designed to address your organization&lsquo;s
+              unique requirements and challenges, ensuring a <br />
               perfect fit for your operations.
             </p>
           </li>
@@ -154,8 +154,8 @@ const WebsiteDevlopment = () => {
               {" "}
               <span className="font-bold">Data Security:</span> You have control
               over security measures, ensuring that sensitive data is protected
-              according to your organization's <br /> standards and compliance
-              requirements.
+              according to your organization&lsquo;s <br /> standards and
+              compliance requirements.
             </p>
           </li>
           <li className="flex gap-2 ">
@@ -201,8 +201,8 @@ const WebsiteDevlopment = () => {
                   Analysis and Planning
                 </h1>
                 <p className="text-sm">
-                  The process begins by thoroughly understanding the client's
-                  objectives.
+                  The process begins by thoroughly understanding the
+                  client&lsquo;s objectives.
                 </p>
               </div>
               <div className="flex flex-col ml-[30px] md:ml-0 mt-[30px] w-[300px] px-9 h-[290px]  justify-center items-center rounded-full border border-white">
@@ -213,8 +213,8 @@ const WebsiteDevlopment = () => {
                   Current State Evaluation
                 </h1>
                 <p className="text-sm">
-                  Assess the client's existing IT infrastructure, systems, and
-                  processes
+                  Assess the client&lsquo;s existing IT infrastructure, systems,
+                  and processes
                 </p>
               </div>
             </div>
