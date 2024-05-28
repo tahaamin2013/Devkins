@@ -64,9 +64,9 @@ const MobileNav = () => {
                   UI/UX Design For Mobile
                 </Link>
                 <Link
-                  href="/page3"
+                  href="/website-development"
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page3")}
+                  onClick={() => closeOnCurrent("/website-development")}
                 >
                   Website Development
                 </Link>
