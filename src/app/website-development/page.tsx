@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 
 import {
   Carousel,
@@ -13,9 +13,7 @@ import Image from "next/image";
 import { Check } from "lucide-react";
 
 const WebsiteDevlopment = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
-  );
+  const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <div>
       <div className="text-white text-center py-24 bg-[url('/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg')] bg-cover bg-no-repeat bg-center">

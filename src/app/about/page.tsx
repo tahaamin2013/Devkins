@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 
 import {
   Carousel,
@@ -11,7 +11,7 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 
 const AboutUs: React.FC = () => {
-  const plugin = React.useRef(
+  const plugin = useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
