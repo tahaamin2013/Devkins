@@ -1,7 +1,7 @@
 "use client";
 
 import { ArrowRight, ChevronDown, Menu } from "lucide-react";
-import { usePathname } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import {
   Sheet,
   SheetContent,
@@ -10,28 +10,38 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import Link from "next/link";
 
 const MobileNav = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   const openSidebar = () => setOpen(true);
   const closeSidebar = () => setOpen(false);
   const toggleOpen = () => setOpen((prev) => !prev);
 
-  const pathname = usePathname();
   const closeOnCurrent = (href: string) => {
     if (pathname === href) {
       closeSidebar();
     }
   };
+
+  const handleNavigation = (href: string) => {
+    router.push(href);
+    closeSidebar();
+  };
+
+  useEffect(() => {
+    // Close the sidebar when the pathname changes
+    closeSidebar();
+  }, [pathname]);
 
   return (
     <div className="sm:hidden">
@@ -49,96 +59,84 @@ const MobileNav = () => {
             <AccordionItem value="item-1">
               <AccordionTrigger>Services</AccordionTrigger>
               <AccordionContent className="flex flex-col gap-3">
-                <Link
-                  href="/page1"
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page1")}
+                  onClick={() => handleNavigation("/uIUXDesign-For-web")}
                 >
                   UI/UX Design For Web
-                </Link>
-                <Link
-                  href="/page2"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page2")}
+                  onClick={() => handleNavigation("//UIUX-Design-For-Mobile")}
                 >
                   UI/UX Design For Mobile
-                </Link>
-                <Link
-                  href="/website-development"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/website-development")}
+                  onClick={() => handleNavigation("/website-development")}
                 >
                   Website Development
-                </Link>
-                <Link
-                  href="/mobile-application-devlopment"
+                </span>
+                <span
                   className="border-black border-b w-fit"
                   onClick={() =>
-                    closeOnCurrent("/mobile-application-devlopment")
+                    handleNavigation("/mobile-application-devlopment")
                   }
                 >
                   Mobile Application Development
-                </Link>
-                <Link
-                  href="/page5"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page5")}
+                  onClick={() => handleNavigation("/graphicDesigns")}
                 >
                   Graphic Design
-                </Link>
-                <Link
-                  href="/page6"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page6")}
+                  onClick={() => handleNavigation("/digital-marketing")}
                 >
                   Digital Marketing
-                </Link>
-                <Link
-                  href="/page7"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page7")}
+                  onClick={() => handleNavigation("/VideoEditing")}
                 >
                   Video Editing
-                </Link>
-                <Link
-                  href="/page8"
+                </span>
+                <span
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page8")}
+                  onClick={() => handleNavigation("/page8")}
                 >
                   QuickBooks
-                </Link>
+                </span>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
           <div className="mt-4 flex flex-col gap-4">
-            <Link
-              href="/about"
+            <span
               className="border-black border-b w-fit"
-              onClick={() => closeOnCurrent("/about")}
+              onClick={() => handleNavigation("/about")}
             >
               About Us
-            </Link>
-            <Link
-              href="/portfolio"
+            </span>
+            <span
               className="border-black border-b w-fit"
-              onClick={() => closeOnCurrent("/portfolio")}
+              onClick={() => handleNavigation("/portfolio")}
             >
               Portfolio
-            </Link>
-            <Link
-              href="/careers"
+            </span>
+            <span
               className="border-black border-b w-fit"
-              onClick={() => closeOnCurrent("/careers")}
+              onClick={() => handleNavigation("/careers")}
             >
               Careers
-            </Link>
-            <Link
-              href="/tools"
+            </span>
+            <span
               className="border-black border-b w-fit"
-              onClick={() => closeOnCurrent("/tools")}
+              onClick={() => handleNavigation("/tools")}
             >
               Tools
-            </Link>
+            </span>
           </div>
         </SheetContent>
       </Sheet>

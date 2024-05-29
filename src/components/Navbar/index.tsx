@@ -53,7 +53,7 @@ const Navbar = () => {
   
   const data = [
     {
-      link: "/fsfsdsdf",
+      link: "/uIUXDesign-For-web",
       title: "UI/UX Design For Web",
       description: () => (
         <div className="flex flex-col">
@@ -125,7 +125,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/UIUX-Design-For-Mobile",
       title: "UI/UX Design For Mobile",
       description: () => (
         <div className="flex flex-col">
@@ -369,7 +369,7 @@ const Navbar = () => {
     },
 
     {
-      link: "/fsfsdsdf",
+      link: "/graphicDesigns",
       title: "Graphic Design",
       description: () => (
         <div className="flex flex-col">
@@ -453,7 +453,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/digital-marketing",
       title: "Digital Marketing",
       description: () => (
         <div className="flex flex-col">
@@ -554,7 +554,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/VideoEditing",
       title: "Video Editing",
       description: () => (
         <div className="flex flex-col">
@@ -715,7 +715,7 @@ const Navbar = () => {
                             key={index}
                             className="p-2 px-3 cursor-pointer h-fit flex flex-col w-full text-left relative opacity-100"
                           >
-                            <Link href={item.link} className="w-full text-left">
+                            <Link href={item.link} className="w-full h-full text-left">
                               <Link href={item.link}>{item.title}</Link>
                             </Link>
                           </DropdownMenuItem>
