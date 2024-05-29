@@ -71,9 +71,11 @@ const MobileNav = () => {
                   Website Development
                 </Link>
                 <Link
-                  href="/page4"
+                  href="/mobile-application-devlopment"
                   className="border-black border-b w-fit"
-                  onClick={() => closeOnCurrent("/page4")}
+                  onClick={() =>
+                    closeOnCurrent("/mobile-application-devlopment")
+                  }
                 >
                   Mobile Application Development
                 </Link>

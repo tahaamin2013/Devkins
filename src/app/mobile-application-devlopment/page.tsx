@@ -12,82 +12,74 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import { Check } from "lucide-react";
 
-const WebsiteDevlopment = () => {
+const MobileAppDevlopment = () => {
   const plugin = useRef(Autoplay({ delay: 2000, stopOnInteraction: true }));
   return (
     <div>
-      <div className="text-white text-center py-24 bg-[url('/_8a0faa67-63da-4d5b-9265-7367a2f5cf56.jpg')] bg-cover bg-no-repeat bg-center">
-        <h1 className="font-bold text-6xl md:text-7xl mb-4">Web Devlopment</h1>
+      <div className="text-white text-center py-24 bg-[url('/app.jpg')] bg-cover bg-no-repeat bg-center">
+        <h1 className="font-bold text-6xl md:text-7xl mb-4">
+          Mobile App Development
+        </h1>
         <p className="text-md">
-          Encompasses building and maintaining websites, including front-end
-          (user interface) and back-end (server-side) <br /> development.
+          Creating captivating and user-friendly mobile applications that engage
+          your audience and enhance your brand <br /> presence.
         </p>
       </div>
       <div>
         <div className="mt-8 px-6 md:px-[70px]">
           <h1 className="font-bold text-4xl mb-2">Service Description</h1>
+
           <p
             className="mb-1
           text-zinc-400 font-bold"
           >
-            We offer Web Development Services to businesses of all sizes to give
-            them a boost.
-          </p>
-          <p
-            className="mb-1
-          text-zinc-400 font-bold"
-          >
-            Web development involves a range of tasks, it involves a range of
-            tasks, including designing the user interface, developing the
-            back-end functionality, and ensuring that <br /> the website or web
-            app is responsive and user-friendly.
-          </p>
-          <p
-            className="mb-1
-          text-zinc-400 font-bold"
-          >
-            Web development encompasses both the visual aspects of a website and
-            its underlying technical infrastructure.
+            Devsinc’s Mobile App Development Services encompasses building of
+            this field encompasses various platforms, including iOS (Apple),
+            Android (Google), and others, and it plays a crucial role in shaping
+            the way people interact with technology in our increasingly
+            mobile-driven world. Mobile developers work on designing, coding,
+            testing, and optimizing mobile apps to provide users with seamless
+            and efficient digital experiences on their handheld devices.
           </p>
         </div>
         <div className="mt-[40px] flex flex-col md:flex-row px-6 sm:px-[70px]">
           <Image
-            src="/web.jpg"
+            src="/mobile.jpg"
             alt=""
             className="rounded-2xl object-cover w-[500px] h-[400px]"
             width={700}
             height={900}
           ></Image>
           <div className="flex flex-col gap-[30px] ml-5 mt-6 md:mt-0">
-            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
+            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl w-full md:w-[600px] pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
               </div>
-              Front-end Development
+              Design and User Experience
             </div>
-            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
+            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl w-full md:w-[600px] pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
               </div>
-              Back-end Development
+              Development
             </div>
-            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
+            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl w-full md:w-[600px] pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
               </div>
-              Content Management System (CMS) Integration
+              Testing{" "}
             </div>
-            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
+            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl w-full md:w-[600px] pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
               </div>
-              E-commerce Features
+              Deployment{" "}
             </div>
-            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl pb-4 items-center">
+            <div className="border-b flex gap-3 font-bold border-zinc-500 text-xl w-full md:w-[600px] pb-4 items-center">
               <div className="text-white rounded-full text-center h-fit w-fit bg-primary p-1">
                 <Check size={16} />
               </div>
-              Responsive Design
+              Maintenance and Updates
             </div>
           </div>
         </div>
@@ -99,80 +91,78 @@ const WebsiteDevlopment = () => {
             <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
             <p>
               {" "}
+              <span className="font-bold">Expanded Market Reach:</span> Mobile
+              apps enable businesses to reach a broader audience as smartphones
+              and tablets are ubiquitous and <br />
+              accessible to a large portion of the global population.
+            </p>
+          </li>
+          <li className="flex gap-2 ">
+            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
+            <p>
+              {" "}
+              <span className="font-bold">User Experience: </span> Enhanced
+              Mobile apps are designed to provide a user-friendly and intuitive
+              experience, often leading to higher user <br /> engagement and
+              customer satisfaction.
+            </p>
+          </li>
+          <li className="flex gap-2 ">
+            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
+            <p>
+              {" "}
+              <span className="font-bold">Improved Brand Loyalty: </span>A
+              well-designed and functional mobile app can foster brand loyalty
+              and keep customers coming back for more.
+            </p>
+          </li>
+          <li className="flex gap-2 ">
+            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
+            <p>
+              {" "}
               <span className="font-bold">
-                Tailored to Specific Needs:
+                Increased Sales and Revenue:
               </span>{" "}
-              Custom software is designed to address your organization&lsquo;s
-              unique requirements and challenges, ensuring a <br />
-              perfect fit for your operations.
+              Mobile apps can serve as a powerful sales and revenue channel
+              through in-app purchases, subscriptions, <br /> and e-commerce
+              functionalities.
             </p>
           </li>
           <li className="flex gap-2 ">
             <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
             <p>
               {" "}
-              <span className="font-bold">Enhanced Efficiency:</span> Custom
-              solutions streamline processes, automate tasks, and eliminate
-              inefficiencies, boosting <br /> productivity and reducing manual
-              work.
+              <span className="font-bold">Access to Device Features:</span>{" "}
+              Developers can leverage device-specific features like GPS, camera,
+              and sensors to create innovative and personalized experiences.
             </p>
           </li>
           <li className="flex gap-2 ">
             <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
             <p>
               {" "}
-              <span className="font-bold">Scalability:</span> As your business
-              grows, custom software can easily adapt and scale to accommodate
-              increased data, users, and functionality.
+              <span className="font-bold">Offline Access:</span>
+              Many mobile apps offer offline functionality, allowing users to
+              access content and perform tasks even without an internet
+              connection.
             </p>
           </li>
           <li className="flex gap-2 ">
             <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
             <p>
               {" "}
-              <span className="font-bold">Cost Savings:</span> While the initial
-              investment may be higher, custom software often leads to long-term
-              cost savings by reducing the need <br /> for multiple third-party
-              applications and licenses.
+              <span className="font-bold">Push Notifications: </span>
+              Apps can send push notifications to users, keeping them informed,
+              engaged, and prompting action.
             </p>
           </li>
           <li className="flex gap-2 ">
             <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
             <p>
               {" "}
-              <span className="font-bold">Competitive Advantage:</span> Custom
-              software can provide a competitive edge by enabling innovation,
-              quicker response to market changes, <br />
-              and differentiation from competitors.
-            </p>
-          </li>
-          <li className="flex gap-2 ">
-            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
-            <p>
-              {" "}
-              <span className="font-bold">Data Security:</span> You have control
-              over security measures, ensuring that sensitive data is protected
-              according to your organization&lsquo;s <br /> standards and
-              compliance requirements.
-            </p>
-          </li>
-          <li className="flex gap-2 ">
-            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
-            <p>
-              {" "}
-              <span className="font-bold">Integration:</span> Custom software
-              can be seamlessly integrated with existing systems and
-              applications, optimizing data flow and <br /> reducing data silos.
-            </p>
-          </li>
-          <li className="flex gap-2 ">
-            <div className="bg-primary p-1 mt-2  rounded-full w-fit f;e h-fit "></div>
-            <p>
-              {" "}
-              <span className="font-bold">Maintenance and Support:</span> You
-              have the flexibility to choose ongoing maintenance and support
-              options, ensuring that your software remains <br /> up-to-date and
-              functional.
+              <span className="font-bold">Data Analytics:</span> Mobile apps
+              provide valuable data on user behavior, enabling businesses to
+              make data-driven decisions and refine their strategies.
             </p>
           </li>
         </ol>
@@ -233,11 +223,12 @@ const WebsiteDevlopment = () => {
                 <div className="bg-[#9159eb] opacity-[.24] rounded-full w-[300px] h-[300px] absolute  blur-2xl"></div>
 
                 <h1 className="font-bold text-6xl mb-3">04</h1>
-                <h1 className="font-bold text-2xl mb-4">Apply</h1>
+                <h1 className="font-bold text-2xl mb-4">
+                  Evaluation and Maintenance
+                </h1>
                 <p className="text-sm">
-                  In this first step, you apply for the current opportunity{" "}
-                  available by attaching an attention-grabbing resume,
-                  portfolio, and cover letter.
+                  Assess the results of the implemented solutions against the
+                  predefined goals
                 </p>
               </div>
             </div>
@@ -438,4 +429,4 @@ const WebsiteDevlopment = () => {
   );
 };
 
-export default WebsiteDevlopment;
+export default MobileAppDevlopment;

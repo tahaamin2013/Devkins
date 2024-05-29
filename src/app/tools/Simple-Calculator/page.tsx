@@ -80,25 +80,25 @@ const SimpleCalculator: React.FC = () => {
         <div className="grid grid-cols-1 gap-[20px] text-2xl mt-2 text-zinc-500">
           <div className="flex flex-row gap-2">
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={handleClear}
             >
               AC
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("/")}
             >
               /
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("%")}
             >
               %
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("*")}
             >
               ÷
@@ -106,25 +106,25 @@ const SimpleCalculator: React.FC = () => {
           </div>
           <div className="flex flex-row gap-3.5">
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("7")}
             >
               7
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("8")}
             >
               8
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("9")}
             >
               9
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("*")}
             >
               X
@@ -132,25 +132,25 @@ const SimpleCalculator: React.FC = () => {
           </div>
           <div className="flex flex-row gap-3.5">
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("4")}
             >
               4
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("5")}
             >
               5
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("6")}
             >
               6
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("-")}
             >
               -
@@ -158,25 +158,25 @@ const SimpleCalculator: React.FC = () => {
           </div>
           <div className="flex flex-row gap-3.5">
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("1")}
             >
               1
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("2")}
             >
               2
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("3")}
             >
               3
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleOperatorClick("+")}
             >
               +
@@ -184,19 +184,19 @@ const SimpleCalculator: React.FC = () => {
           </div>
           <div className="flex flex-row gap-3.5">
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg hover:font-bold"
               onClick={() => handleNumberClick("0")}
             >
               0
             </div>
             <div
-              className="bg-transparent hover:bg-purple-500 hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg font-bold"
+              className="bg-transparent hover:bg-primary hover:text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg font-bold"
               onClick={() => handleNumberClick(".")}
             >
               .
             </div>
             <div
-              className="bg-purple-600 hover:bg-purple-500 text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg font-bold w-full text-center text-3xl"
+              className="bg-purple-600 hover:bg-primary text-white px-7 py-3 transition-all duration-300 cursor-pointer rounded-lg font-bold w-full text-center text-3xl"
               onClick={handleEqualsClick}
             >
               =

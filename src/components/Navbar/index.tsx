@@ -294,7 +294,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/mobile-application-devlopment",
       title: "Mobile Application Development",
       description: () => (
         <div className="flex flex-col">
