@@ -1,6 +1,7 @@
 "use client";
+import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -58,6 +59,15 @@ const PasswordGenerator: React.FC = () => {
     const value = e.target.value;
     if (!value.startsWith('0')) {
       setNumber(Number(value));
+    }
+  };
+
+  const strengthRef = useRef(null);
+
+  const handleCopy = () => {
+    if (strengthRef.current) {
+      navigator.clipboard.writeText(strengthRef.current.textContent || '');
+      alert('Password strength copied to clipboard!');
     }
   };
 
@@ -147,6 +157,12 @@ const PasswordGenerator: React.FC = () => {
             >
               {passwordStrength}
             </span>
+            <Button
+          onClick={handleCopy}
+          className="ml-2 bg-blue-500 text-white p-1 rounded"
+        >
+          Copy
+        </Button>
           </p>
         </div>
       </div>

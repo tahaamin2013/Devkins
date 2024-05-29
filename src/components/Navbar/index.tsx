@@ -741,7 +741,7 @@ const Navbar = () => {
               Careers
             </Link>
             <Link
-              href="/Tools"
+              href="/tools"
               className={buttonVariants({
                 variant: "ghost",
                 size: "sm",
