@@ -1,4 +1,5 @@
 "use client";
+import { Input } from "@/components/ui/input";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,6 +12,7 @@ const PasswordGenerator: React.FC = () => {
   const [includeSymbols, setIncludeSymbols] = useState<boolean>(true);
   const [password, setPassword] = useState<string>("");
   const [passwordStrength, setPasswordStrength] = useState<string>("");
+  const [number, setNumber] = useState<number | null>(null);
 
   const generatePassword = () => {
     const upperCaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -52,6 +54,13 @@ const PasswordGenerator: React.FC = () => {
     return "Strong";
   };
 
+  const handleNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    if (!value.startsWith('0')) {
+      setNumber(Number(value));
+    }
+  };
+
   return (
     <div className="flex flex-col overflow-hidden items-center justify-center min-h-screen bg-gray-100">
       <ToastContainer />
@@ -60,14 +69,15 @@ const PasswordGenerator: React.FC = () => {
         <div className="mb-4">
           <label className="block mb-2 text-lg font-semibold">
             Password Length:
-            <input
-              type="number"
-              value={length}
-              onChange={(e) => setLength(Number(e.target.value))}
-              min="1"
-              max="128"
-              className="mt-1 p-2 border rounded-md w-full"
-            />
+            <Input
+          type="number"
+          id="number"
+          value={number || ''}
+          onChange={handleNumberChange}
+          min="1"
+          className="border border-gray-300 p-2 rounded mb-4 w-full"
+          required
+        />
           </label>
         </div>
         <div className="mb-4">
@@ -116,7 +126,7 @@ const PasswordGenerator: React.FC = () => {
         </div>
         <button
           onClick={generatePassword}
-          className="bg-primary text-white  py-2 px-4 rounded-md"
+          className="bg-primary text-white py-2 px-4 rounded-md"
         >
           Generate Password
         </button>
@@ -126,8 +136,8 @@ const PasswordGenerator: React.FC = () => {
             {password}
           </p>
           <p className="text-lg font-semibold mt-2">
-            <span
-              className={`font-bold ${
+          <span
+            className={`font-bold ${
                 passwordStrength === "Strong"
                   ? "text-green-500"
                   : passwordStrength === "Medium"
