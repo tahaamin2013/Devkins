@@ -580,7 +580,7 @@ const Navbar = () => {
       ),
     },
     {
-      link: "/fsfsdsdf",
+      link: "/quickbooks",
       title: "Quickbooks",
       description: () => (
         <div className="flex flex-col">

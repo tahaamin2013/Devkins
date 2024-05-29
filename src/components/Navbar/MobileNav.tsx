@@ -105,7 +105,7 @@ const MobileNav = () => {
                 </span>
                 <span
                   className="border-black border-b w-fit"
-                  onClick={() => handleNavigation("/page8")}
+                  onClick={() => handleNavigation("/quickbooks")}
                 >
                   QuickBooks
                 </span>
