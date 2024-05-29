@@ -66,7 +66,7 @@ const PasswordGenerator: React.FC = () => {
 
   const handleCopy = () => {
     if (strengthRef.current) {
-      navigator.clipboard.writeText(strengthRef.current.textContent || '');
+      // navigator.clipboard.writeText(strengthRef.current.textContent || '');
       alert('Password strength copied to clipboard!');
     }
   };
