@@ -48,13 +48,19 @@ const Tools = () => {
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
           <AccordionItem value="item-1" className="w-[330px]">
-            <AccordionTrigger>Simple Tools</AccordionTrigger>
+            <AccordionTrigger>Converter Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/number-to-words-converter"
+                className="border-b w-fit border-black"
+              >
+                Number To Words Converter
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/color-converter"
+                className="border-b w-fit border-black"
+              >
+                Color Converter
               </Link>
               <Link href="/fsd" className="border-b w-fit border-black">
                 Tool Title
@@ -72,16 +78,25 @@ const Tools = () => {
           className="bg-white rounded-xl p-3 pt-0 border h-fit"
         >
           <AccordionItem value="item-1" className="w-[330px]">
-            <AccordionTrigger>Modern Tools</AccordionTrigger>
+            <AccordionTrigger>Text Tools</AccordionTrigger>
             <AccordionContent className="flex flex-col gap-3">
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/character-counter"
+                className="border-b w-fit border-black"
+              >
+                Character Counter
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/case-converter"
+                className="border-b w-fit border-black"
+              >
+                Case Converter
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/reverse-words"
+                className="border-b w-fit border-black"
+              >
+                Reverse Words
               </Link>
               <Link href="/fsd" className="border-b w-fit border-black">
                 Tool Title
