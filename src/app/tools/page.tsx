@@ -62,8 +62,8 @@ const Tools = () => {
               >
                 Color Converter
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link href="/tools/binary-converter" className="border-b w-fit border-black">
+                Binary Converter
               </Link>
               <Link href="/fsd" className="border-b w-fit border-black">
                 Tool Title
