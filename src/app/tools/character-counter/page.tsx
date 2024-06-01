@@ -17,7 +17,7 @@ export default function Counter() {
   return (
     <div className="h-screen flex-col mx-5 gap-3 flex justify-center items-center overflow-hidden">
       <h1 className="font-bold text-3xl">Character Counter</h1>
-      <div className="bg-white border rounded-lg w-fit p-5 px-7">
+      <div className="bg-white mx-4 border rounded-lg w-fit p-5 px-7">
         <Textarea
           value={text}
           onChange={handleChange}

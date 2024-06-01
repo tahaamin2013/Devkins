@@ -68,7 +68,7 @@ const CaseConverter = () => {
   return (
     <div className="flex flex-col gap-3 overflow-hidden h-screen justify-center items-center">
       <h1 className="font-bold text-4xl">Case Converter</h1>
-      <div className="border rounded-lg bg-white p-5">
+      <div className="border mx-4 rounded-lg bg-white p-5">
         <form onSubmit={handleSubmit}>
           <Textarea
             value={text}
@@ -76,7 +76,11 @@ const CaseConverter = () => {
             placeholder="Enter your text here"
           />
           <br />
-          <select className="border-2 rounded-lg px-3 transition-all duration-500 mb-3 outline-none" value={caseType} onChange={handleCaseChange}>
+          <select
+            className="border-2 rounded-lg px-3 transition-all duration-500 mb-3 outline-none"
+            value={caseType}
+            onChange={handleCaseChange}
+          >
             <option value="lowercase">lowercase</option>
             <option value="UPPERCASE">UPPERCASE</option>
             <option value="Sentence case">Sentence case</option>

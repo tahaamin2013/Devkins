@@ -21,23 +21,19 @@ const ReverseWordsPage: React.FC = () => {
 
   return (
     <div className="flex overflow-hidden flex-col justify-center items-center h-screen">
-        <h1 className="font-bold text-3xl mb-3">Reverse Words</h1>
+      <h1 className="font-bold text-3xl mb-3">Reverse Words</h1>
       <div className="">
-        <div className="bg-white border text-center items-center flex flex-col gap-4 p-4 rounded-xl w-fit h-fit">
+        <div className="bg-white mx-4 border text-center items-center flex flex-col gap-4 p-4 rounded-xl w-fit h-fit">
           <Input
             type="text"
             value={inputText}
             onChange={handleInputChange}
             placeholder="Type text here"
           />
-          <Button
-            onClick={reverseWords} className="text-white"
-          >
+          <Button onClick={reverseWords} className="text-white">
             Reverse
           </Button>
-          <p>
-            {reversedText}
-          </p>
+          <p>{reversedText}</p>
         </div>
       </div>
     </div>
