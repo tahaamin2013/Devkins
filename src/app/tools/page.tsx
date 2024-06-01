@@ -62,7 +62,10 @@ const Tools = () => {
               >
                 Color Converter
               </Link>
-              <Link href="/tools/binary-converter" className="border-b w-fit border-black">
+              <Link
+                href="/tools/binary-converter"
+                className="border-b w-fit border-black"
+              >
                 Binary Converter
               </Link>
               <Link href="/fsd" className="border-b w-fit border-black">
@@ -98,8 +101,11 @@ const Tools = () => {
               >
                 Reverse Words
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/emojis-remover"
+                className="border-b w-fit border-black"
+              >
+                Emojis Remover
               </Link>
             </AccordionContent>
           </AccordionItem>
