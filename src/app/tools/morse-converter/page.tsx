@@ -75,17 +75,21 @@ const MorseConverter = () => {
     .join("\n");
 
   const textToMorse = (text: string): string => {
-    return text
-      .toUpperCase()
-      .split("")
-      .map((char) => morseCodeMap[char] || "")
-      .join(" ");
+    return (
+      text
+        .toUpperCase()
+        .split("")
+        // @ts-ignore
+        .map((char) => morseCodeMap[char] || "")
+        .join(" ")
+    );
   };
 
   const morseToText = (morse: string): string => {
     const morseMapReverse: { [key: string]: string } = Object.entries(
       morseCodeMap
     ).reduce((acc, [key, value]) => {
+      // @ts-ignore
       acc[value] = key;
       return acc;
     }, {});
