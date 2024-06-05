@@ -45,9 +45,9 @@ const MobileNav = () => {
 
   return (
     <div className="sm:hidden">
-      <Sheet open={isOpen} onOpenChange={setOpen}>
+      <Sheet>
         <SheetTrigger asChild>
-          <button onClick={toggleOpen}>
+          <button>
             <Menu className="relative z-50 h-5 w-5 text-zinc-700" />
           </button>
         </SheetTrigger>

@@ -16,7 +16,7 @@ const Tools = () => {
           type="single"
           collapsible
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
+          className="bg-white rounded-xl p-3 pt-0 border "
         >
           <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>
@@ -45,7 +45,7 @@ const Tools = () => {
           type="single"
           collapsible
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
+          className="bg-white rounded-xl p-3 pt-0 border "
         >
           <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Converter Tools</AccordionTrigger>
@@ -68,8 +68,35 @@ const Tools = () => {
               >
                 Binary Converter
               </Link>
-              <Link href="/fsd" className="border-b w-fit border-black">
-                Tool Title
+              <Link
+                href="/tools/decimal-converter"
+                className="border-b w-fit border-black"
+              >
+                Decimal Converter
+              </Link>
+              <Link
+                href="/tools/base64-encoder"
+                className="border-b w-fit border-black"
+              >
+                Base64 Encoder
+              </Link>
+              <Link
+                href="/tools/base64-decoder"
+                className="border-b w-fit border-black"
+              >
+                Base64 Decoder
+              </Link>
+              <Link
+                href="/tools/morse-converter"
+                className="border-b w-fit border-black"
+              >
+                Morse Converter
+              </Link>
+              <Link
+                href="/tools/hex-converter"
+                className="border-b w-fit border-black"
+              >
+                Hex Converter
               </Link>
             </AccordionContent>
           </AccordionItem>
@@ -78,7 +105,7 @@ const Tools = () => {
           type="single"
           collapsible
           defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-          className="bg-white rounded-xl p-3 pt-0 border h-fit"
+          className="bg-white rounded-xl p-3 pt-0 border "
         >
           <AccordionItem value="item-1" className="w-[330px]">
             <AccordionTrigger>Text Tools</AccordionTrigger>
@@ -107,6 +134,33 @@ const Tools = () => {
               >
                 Emojis Remover
               </Link>
+
+              <Link
+                href="/tools/reverse-letters"
+                className="border-b w-fit border-black"
+              >
+                Reverse Letters
+              </Link>
+
+              <Link
+                href="/tools/reverse-list"
+                className="border-b w-fit border-black"
+              >
+                Reverse List
+              </Link>
+
+              <Link
+                href="/tools/duplicate-words-remover"
+                className="border-b w-fit border-black"
+              >
+                Duplicate Words Remover
+              </Link>
+              <Link
+                href="/tools/cursive-text-generator"
+                className="border-b w-fit border-black"
+              >
+                Cursive Text Generator
+              </Link>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
@@ -118,7 +172,7 @@ const Tools = () => {
               type="single"
               collapsible
               defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+              className="bg-white rounded-xl p-3 pt-0 border "
             >
               <AccordionItem value="item-1" className="w-[330px]">
                 <AccordionTrigger>Financial Calculators</AccordionTrigger>
@@ -142,7 +196,7 @@ const Tools = () => {
               type="single"
               collapsible
               defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+              className="bg-white rounded-xl p-3 pt-0 border "
             >
               <AccordionItem value="item-1" className="w-[330px]">
                 <AccordionTrigger>
@@ -168,7 +222,7 @@ const Tools = () => {
               type="single"
               collapsible
               defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+              className="bg-white rounded-xl p-3 pt-0 border "
             >
               <AccordionItem value="item-1" className="w-[330px]">
                 <AccordionTrigger>Math Calculators</AccordionTrigger>
@@ -192,7 +246,7 @@ const Tools = () => {
               type="single"
               collapsible
               defaultValue="item-1" // Set defaultValue to "item-1" to open the accordion by default
-              className="bg-white rounded-xl p-3 pt-0 border h-fit"
+              className="bg-white rounded-xl p-3 pt-0 border "
             >
               <AccordionItem value="item-1" className="w-[330px]">
                 <AccordionTrigger>Other Calculators</AccordionTrigger>
