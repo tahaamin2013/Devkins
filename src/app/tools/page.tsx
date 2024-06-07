@@ -161,6 +161,39 @@ const Tools = () => {
               >
                 Cursive Text Generator
               </Link>
+              <Link
+                href="/tools/old-english-text-generator"
+                className="border-b w-fit border-black"
+              >
+                Old English Text Generator
+              </Link>
+
+              <Link
+                href="/tools/upside-down-text-generator"
+                className="border-b w-fit border-black"
+              >
+                Upside Down Text Generator
+              </Link>
+
+              <Link
+                href="/tools/list-randomizer"
+                className="border-b w-fit border-black"
+              >
+                List Randomizer
+              </Link>
+
+              <Link
+                href="/tools/text-separator"
+                className="border-b w-fit border-black"
+              >
+                Text Separator
+              </Link>
+              <Link
+                href="/tools/text-to-speech"
+                className="border-b w-fit border-black"
+              >
+                Text To Speech
+              </Link>
             </AccordionContent>
           </AccordionItem>
         </Accordion>
