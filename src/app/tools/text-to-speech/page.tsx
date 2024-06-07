@@ -1,8 +1,11 @@
+import WebApi from '@/components/WebApi'
 import React from 'react'
 
 const page = () => {
   return (
-    <div>page</div>
+      <div>
+          <WebApi />
+    </div>
   )
 }
 
