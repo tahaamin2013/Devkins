@@ -93,6 +93,24 @@ const Tools = () => {
                 Morse Converter
               </Link>
               <Link
+                href="/tools/bits-to-bytes-convertor"
+                className="border-b w-fit border-black"
+              >
+                Bits to Bytes Converter
+              </Link>
+              <Link
+                href="/tools/kilobyte-to-megabyte-converte"
+                className="border-b w-fit border-black"
+              >
+                Kilobyte to Megabyte Converter
+              </Link>
+              <Link
+                href="/tools/gigabyte-to-terabyte-converter"
+                className="border-b w-fit border-black"
+              >
+                Gigabyte to Terabyte Converter
+              </Link>
+              <Link
                 href="/tools/hex-converter"
                 className="border-b w-fit border-black"
               >

@@ -35,9 +35,9 @@ export default function WebApi() {
           onChange={(event) => setText(event.target.value)}
         />
       </div>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex justify-center items-center" >
         <Button className="text-white" onClick={speak}>
-          Speak
+          Speak  
         </Button>
         <select
           value={selectedLanguage}
